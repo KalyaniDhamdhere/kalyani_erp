@@ -1,0 +1,33 @@
+<%if current_user.role='SuperAdmin'%>
+<div class="col-sm-2 col-lg-2">
+<div class="sidebar-nav">
+<div class="nav-canvas">
+  <div class="nav-sm nav nav-stacked">
+  </div>
+    <ul class="nav nav-pills nav-stacked main-menu">
+        <li class="nav-header">Index</li>
+          <li>
+          <a href="main_routes">
+            <i class="glyphicon glyphicon-road"></i>
+            <span>Transport</span>
+          </a>
+        </li>
+        <li>
+          <a href="customers">
+            <i class="glyphicon glyphicon-road"></i>
+            <span>Customer</span>
+          </a>
+        </li>
+        <li>
+          <a href="students">
+            <i class="glyphicon glyphicon-road"></i>
+            <span>Student</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%end%>

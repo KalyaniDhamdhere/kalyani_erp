@@ -1,0 +1,16 @@
+
+<div class="col-md-12">
+<%=bootstrap_form_for :student ,url: {action: 'mail',id:@student.id} do |f|%>
+<br/>
+<div class="row">
+<div class="col-md-4">
+<%=label_tag :subject %>
+<%=text_field_tag :subject%><br/></div></div>
+<div class="row">
+<div class="col-md-4">
+<%=label_tag :message %>
+<%=cktext_area_tag :message%></div></div>
+<%=f.submit 'Submit'%>
+<%end%>
+</div>
+

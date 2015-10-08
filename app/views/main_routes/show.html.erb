@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Route name:</strong>
+  <%= @main_route.route_name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @main_route.cost %>
+</p>
+
+<%= link_to 'Edit', edit_main_route_path(@main_route) %> |
+<%= link_to 'Back', main_routes_path %>
+

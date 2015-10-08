@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeviceDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="row">
+  <div class="col-lg-12" align="center">
+    <% if notice %>
+      <div class="alert alert-success" id="success-alert">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <%= notice %>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger" id="success-alert">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <%= alert %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<p class="navbar-text pull-right">
+
+<% if user_signed_in? %>
+  <%= render 'layouts/index'%>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+<%= yield %>
+
+</body>
+</html>

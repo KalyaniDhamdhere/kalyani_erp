@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Main Routes</h1>
+<div class="pull-right">
+<%= link_to 'Add Route', new_main_route_path,class: "btn btn-info" %>
+<%=link_to 'PDF Report',main_route_pdf_main_route_path(@main_routes,format:"pdf"),class: "btn btn-primary"%>
+
+</div>
+<table class= "table table-hover">
+  <thead>
+    <tr>
+      <th>Route name</th>
+      <th>Cost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @main_routes.each do |main_route| %>
+      <tr>
+        <td><%= main_route.route_name %></td>
+        <td><%= main_route.cost %></td>
+        <td><%= link_to 'Show', main_route %></td>
+        <td><%= link_to 'Edit', edit_main_route_path(main_route) %></td>
+        <td><%= link_to 'Destroy', main_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

@@ -1,0 +1,30 @@
+<%= bootstrap_form_for @main_route do |f| %>
+  <% if @main_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@main_route.errors.count, "error") %> prohibited this main_route from being saved:</h2>
+
+      <ul>
+      <% @main_route.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="row">
+  <div class="col-md-4">
+    <%= f.label :route_name %><br>
+    <%= f.text_field :route_name ,hide_label: true,class: "form-control"%>
+  </div>
+  <div class="col-md-4">
+  
+    <%= f.label :cost%><br>
+    <%= f.text_field :cost,hide_label: true ,class: "form-control"%>
+  </div>
+  </div>
+  <div class="row">
+    <%= f.submit "Submit"%>
+
+<%= link_to 'Back', main_routes_path %>
+
+  </div>
+<% end %>

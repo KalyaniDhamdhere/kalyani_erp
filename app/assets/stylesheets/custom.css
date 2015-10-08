@@ -1,0 +1,156 @@
+ td{
+  padding-right: 5px;
+ }
+ .login{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;  
+  line-height: 20px
+}
+.themeh3{
+  color: #337ab7;
+  margin-bottom: 30px;
+}
+.themeh2{
+  color: #337ab7; 
+}
+
+.themep {
+  margin-bottom: 26px;
+}
+.themetoggle {  
+  background-color: #499ff6;
+  background-image: none;
+  border: 1px solid #499ff6;
+  border-radius: 4px;
+}
+.themenav {
+  margin-top: 36px; 
+}
+.themefont{
+  font-size:32px;
+}
+.themek{
+color:#B2D85B;
+}
+.themejumbo{
+  padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+  background: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .themejumbo {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+}
+.navbar-custom {
+    font-weight: bold;
+    text-align: center;
+    padding: 1px 35px;
+    top-margin:30px;
+  color: #FFFFFF;
+    background-color: #4682B4;
+}
+.adjust_size {
+  height: 100px;
+  width: 100px;
+
+}
+.adjust_size_photo {
+  height: 110px;
+  width: 100px;
+}
+.adjust_photo {
+  height: 200px;
+  width: 150px;
+}
+.photo {
+  height: 25px;
+  width: 25px;
+}
+.breadcrumb {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 15px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    float: none;
+    background: none repeat scroll 0% 0% #D2D6DE;
+    padding-left: 10px;
+}
+.fa {
+  font-size: 50px;
+}
+
+.tooltip_wrapper {
+  position: relative;
+}
+
+.helper_tooltip {
+    position: absolute;
+    background: #444;
+    padding: 2px 5px 2px 5px;
+    bottom: 100%;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+    z-index: 300;
+    opacity: 0;
+    border-radius: 5px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.tooltip_triangle {
+    position: absolute;
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #444 10px;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    width: 0;
+}
+.tooltip_wrapper:hover .helper_tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+sup {
+  color: red;
+  line-height: 20px;
+  font-size: 10px;
+}
+
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1050;
+    top: 30%;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#nprogress .spinner-icon {
+    width: 20px;
+    height: 20px;
+    position :absolute;
+    left :7%;
+    top :70%;
+    border:  solid 2px transparent;
+    border-top-col:  blue;
+    border-left-color: blue;
+    border-radius: 10px;
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    -moz-animation:    nprogress-spinner 400ms linear infinite;
+    -ms-animation:     nprogress-spinner 400ms linear infinite;
+    -o-animation:      nprogress-spinner 400ms linear infinite;
+    animation:         nprogress-spinner 400ms linear infinite;
+}
